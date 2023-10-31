@@ -1,4 +1,4 @@
-# ImmersiveEmpathicComputingLab.github.io
+# ImmersiveEmpathicInterfaceLab.github.io
 
 https://ImmersiveEmpathicInterfaceLab.github.io
 

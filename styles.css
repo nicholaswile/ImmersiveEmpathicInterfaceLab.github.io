@@ -1,3 +1,64 @@
+:root {
+   
+    --col_bg: #F8F8FF;
+    --col_nav1: #000000ff;
+    --col_nav2: #1b1b1b00;
+    --col_font: #000000;
+}
+
+.dark-mode {
+    --col_bg: #1b1b1b;
+    --col_font: #FFFFFF;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--col_bg);
+    color: var(--col_font);
+
+}
+
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--col_nav1), var(--col_nav2));
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar ul {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.navbar ul li {
+    float: right; 
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.main {
+    margin-top: 128px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.main hr {
+    margin-left: 0;
+    margin-right: 0;
 }
