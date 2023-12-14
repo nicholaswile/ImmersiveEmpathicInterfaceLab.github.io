@@ -7,6 +7,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--ksublack: rgb(35, 31, 32);
+	--ksugrey: rgb(176, 179, 178);
+	--ksuyellow:rgba(255, 198, 41, 1);
+}
+
+.img_cont {
+	border-color: 1px solid black;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1794,6 +1804,7 @@ input, select, textarea {
 		header.major p {
 			color: #fff;
 			top: 0;
+			text-align: justify;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2487,9 +2498,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: var(--ksuyellow);
 			box-shadow: none !important;
-			color: #ffffff !important;
+			color: black !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2703,15 +2714,15 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: rgba(0, 0, 0, .375);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: rgba(0, 0, 0, 0.45);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: rgba(0, 0, 0, 0.525);
 		}
 
 		.spotlight:nth-child(4) {
@@ -2816,9 +2827,11 @@ input, select, textarea {
 			padding: 0;
 		}
 
+		/*Welcome to the lab paragraph*/
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			/*background-color: #21b2a6;*/
+			background-color: var(--ksublack);
+			color: white;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2842,15 +2855,16 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: white;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
+			/*Welcome to the lab paragraph text*/
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: white;
 			}
 
 			.wrapper.style1 label {
@@ -2911,15 +2925,15 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 .icon.major {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 			.wrapper.style1 ul.alt li {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 			.wrapper.style1 table tbody tr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
@@ -2975,8 +2989,10 @@ input, select, textarea {
 
 			}
 
+
+		/*The three things about the lab*/
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: var(--ksugrey);
 		}
 
 		.wrapper.style3 {
@@ -3141,6 +3157,47 @@ input, select, textarea {
 		.wrapper.style4 {
 			background-color: transparent;
 		}
+
+		.wrapper.style6 {
+			background-color: var(--ksuyellow);
+			color: black;
+		}
+
+			.wrapper.style6 strong, .wrapper.style6 b {
+				color: black;
+			}
+
+			.wrapper.style6 h2, .wrapper.style6 h3, .wrapper.style6 h4, .wrapper.style6 h5, .wrapper.style6 h6 {
+				color: black;
+			}
+
+			.wrapper.style6 hr {
+				border-color: black;
+			}
+
+			.wrapper.style6 blockquote {
+				border-color: black;
+			}
+
+			.wrapper.style6 code {
+				background: rgba(0, 0, 0, 0.0375);
+			}
+
+			.wrapper.style6 header p {
+				color: black;
+			}
+
+			.wrapper.style6 header.major h2, .wrapper.style6 header.major h3, .wrapper.style6 header.major h4, .wrapper.style6 header.major h5, .wrapper.style6 header.major h6 {
+				border-color: black;
+			}
+
+			.wrapper.style6 header.major p {
+				color: black;
+			}
+
+			.wrapper.style6 label {
+				color: black;
+			}
 
 		.wrapper.style5 {
 			background-color: #ffffff;
@@ -3445,7 +3502,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: var(--ksublack);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3976,7 +4033,7 @@ input, select, textarea {
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: rgba(35, 31, 32, .9);
 	}
 
 	body.is-mobile.landing #page-wrapper {
@@ -3995,5 +4052,5 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+		background-color: rgba(35, 31, 32, .9);
 	}
