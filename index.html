@@ -1,436 +1,173 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>IEI Lab KSU</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sans-serif">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>
-
-            body,h1,h2,h3,h4,h5,h6 {font-family:Arial, Helvetica, sans-serif}
-
-            body, html {
-                height: 100%;
-                line-height: 1.8;
-            }
-
-            :root {
-                --header_img: url("/images/atrium_day_edit.jpg");
-            }
-
-            .dark-mode {
-                --header_img: url("/images/atrium_nite_edit.jpg")
-            }
-
-            /* Full height image header */
-            .bgimg-1 {
-                background-position: center;
-                background-size: cover;
-                background-image: var(--header_img);
-                min-height: 100%;
-
-            }
-
-            .logo-img {
-                background-position: center;
-                background-size: cover;
-                background-image: url("/images/ksu_logo.png");
-                min-height: 100%;
-                color: rgba(0,0,0,0);
-                padding: 16px;
-                margin: 8px;
-            }
-
-            .w3-bar .w3-button {
-                padding: 16px;
-            }
-            
-            #more {display: none;}
-
-            </style>
-        </head>
-        <body>
-
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-bar w3-white w3-card" id="myNavbar">
-                <a href="#home" class="w3-bar-item w3-wide logo-img" >############</a>
-                <!-- Right-sided navbar links -->
-                <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-                <a href="#team" class="w3-bar-item w3-button">TEAM</a>
-                <a href="#join" class="w3-bar-item w3-button">JOIN</a>
-
-                <!-- Under construction -->
-                <a href="#" class="w3-bar-item w3-button">RESEARCH</a>
-                <a href="#" class="w3-bar-item w3-button">EDUCATION</a>
-
-                </div>
-
-                <button onclick="myFunction0()">Try night mode!</button>
-                <script>
-                function myFunction0() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-                }
-                </script>
-                
-                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Sidebar on small screens when clicking the menu icon -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="#about" onclick="w3_close()" class="">ABOUT</a>
-        <a href="#team" onclick="w3_close()" class="">TEAM</a>
-        <a href="#join" onclick="w3_close()" class="">JOIN</a>
-
-        <!-- Under construction -->
-        <a href="#" class="w3-bar-item w3-button">RESEARCH</a>
-        <a href="#" class="w3-bar-item w3-button">EDUCATION</a>
-
-        </nav>
-
-        <!-- Header with full-height image -->
-        <header class="bgimg-1 w3-display-container" id="home">
-        <div class="w3-display-left w3-text-white" style="padding:48px">
-            <span class="w3-jumbo w3-hide-small" style=" font-weight: bold;font-family: 'Times New Roman', Times, serif;">Immersive Empathic Interface Lab</span><br>
-            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Immersive Empathic Interface Lab</span><br>
-            <span class="w3-large">Kennesaw State University Department of Software Engineering and Game Development</span>
-            <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Enter the lab</a></p>
-        </div> 
-        </header>
-
-        <!-- About Section -->
-        <div class="w3-container" style=" width: 60%; margin-left: auto; margin-right: auto;" id="about" >
-        <h3 class="w3-center" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; padding-top:60px;">WELCOME TO THE IEI LAB</h3>
-        <div class="w3-row-padding w3-center" style="margin-top:64px;" >
-            <div class="w3-third">
-            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-            <p class="w3-large" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Immersive Experiences</p>
-            <p style="text-align: justify; padding-right: 20px;" >Creating multisensory Virtual Reality, Augmented Reality, and Mixed Reality applications, and investigating the impact on human behavior.</p>
-            </div>
-            <div class="w3-third">
-            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Empathic Computing</p>
-            <p style="text-align: justify; padding-right: 20px;" >Researching and developing systems that can recognize, interpret, process, and simulate human affects through Machine Learning.</p>
-            </div>
-            <div class="w3-third">
-            <i class="fa fa-user w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Human-Computer Interaction</p>
-            <p style="text-align: justify; padding-right: 20px" >Designing interaces for novel interactions, focusing on social implications such as privacy and cybersickness.</p>
-            </div>
-        </div>
-        <p class="w3-large"style="text-align: justify;" >
-            We are a research group in the field of eXtended Reality (VR/MR/AR), and data-driven Empathic Computing, based on the Human-Computer Interaction (HCI) perspective. We are particularly interested in the fully personalized immersive and interactive experience to solve real-world problems in education, training, collaboration, simulation, and healthcare, via improving human perception and cognition. Understanding and analyzing the digital domain with a virtual avatar, embodiment, multi-sensory, intuitive user interface system, using both empirical and statistical examination to effectively deliver the immersion and interaction experience is key in our research.
-        </p>
-        </div>
-
-        <!-- Team Section -->
-        <div class="w3-container w3-light-grey" style="padding:60px 16px" id="team">
-            <h3 class="w3-center" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; ">MEMBERS</h3>
-            <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <script>
-                        function myFunction() {
-                            var dots = document.getElementById("dots");
-                            var moreText = document.getElementById("more");
-                            var btnText = document.getElementById("myBtn");
-            
-                            if (dots.style.display === "none") {
-                                dots.style.display = "inline";
-                                btnText.innerHTML = "Read more";
-                                moreText.style.display = "none";
-                            } else {
-                                dots.style.display = "none";
-                                btnText.innerHTML = "Read less";
-                                moreText.style.display = "inline";
-                            }
-                        }
-                    </script>
-                <img src="/images/jung.png" alt="Jung" style="width:100%">
-                <div class="w3-container">
-                <h3>Sungchul Jung</h3>
-                <p class="w3-opacity">Assistant Professor</p>
-                <p>I am an Assistant Professor of Computer Game Design and Development at Kennesaw State University.<span id="dots">...</span><span id="more"> I completed my Ph.D. in Computer Science at the University of Central Florida in 2018. I was a postdoctoral fellow researcher at the Human Interface Technology Lab (HIT Lab) in New Zealand, from 2018 to 2021. My research interests lie in the field of eXtended Reality (VR/MR/AR)  and data-driven Empathic Computing based Human-Computer Interaction (HCI) perspective. Based on the findings from my research, I am leveraging the fully personalized virtual reality experience for social relationships, education, learning and collaboration, entertainment, simulation, game design, and healthcare. I am actively working on academic service as a reviewer, program committee, and editor at prestigious venues such as IEEE VR, ACM VRST, IEEE ISMAR, ACM CHI, and Frontiers.</span></p>
-                <p><button onclick="myFunction()" id="myBtn">Read more</button></p>
-                </div>
-            </div>
-            </div>
-           
-            <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card">
-                <script>
-                    function myFunction2() {
-                        var dots = document.getElementById("dots2");
-                        var moreText = document.getElementById("more2");
-                        var btnText = document.getElementById("myBtn2");
-        
-                        if (dots.style.display === "none") {
-                            dots.style.display = "inline";
-                            btnText.innerHTML = "Read more";
-                            moreText.style.display = "none";
-                        } else {
-                            dots.style.display = "none";
-                            btnText.innerHTML = "Read less";
-                            moreText.style.display = "inline";
-                        }
-                    }
-                </script>
-                <img src="/images/wile.png" alt="Nicholas" style="width:100%">
-                <div class="w3-container">
-                <h3>Nicholas Wile</h3>
-                <p class="w3-opacity">Graduate Research Assistant | MS Student</p>
-                <p>I am a Graduate Research Assistant in the Department of Software Engineering and Game Development.<span id="dots2">...</span><span id="more2"> I am pursuing a Master’s degree in Computer Science, and I graduated summa cum laude from Kennesaw State University in 2022 with a Bachelor’s degree in Computer Science and a minor in Computer Game Design and Development. My research interests are broad and vary with each project I work on, with a current focus in game design and development, computer graphics and multimedia, and machine learning. I am currently designing and developing virtual reality and machine learning applications for the Immersive Empathic Interface Lab for use in human behavioral research. My most recent project, a VR Classroom System, won first place in the Spring 2023 KSU Computing Showcase!</span></p>
-                <p><button onclick="myFunction2()" id="myBtn2">Read more</button></p>
-                </div>
-            </div>
-            </div>
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
-                        <script>
-                            function myFunction3() {
-                                var dots = document.getElementById("dots3");
-                                var moreText = document.getElementById("more3");
-                                var btnText = document.getElementById("myBtn3");
-                
-                                if (dots.style.display === "none") {
-                                    dots.style.display = "inline";
-                                    btnText.innerHTML = "Read more";
-                                    moreText.style.display = "none";
-                                } else {
-                                    dots.style.display = "none";
-                                    btnText.innerHTML = "Read less";
-                                    moreText.style.display = "inline";
-                                }
-                            }
-                        </script>
-                        <img src="/images/jinan.png" alt="Afifa" style="width:100%">
-                        <div class="w3-container">
-                        <h3>Afifa Jinan</h3>
-                        <p class="w3-opacity">Graduate Research Assistant | PhD Student</p>
-                        <p>Afifa Jinan is a Graduate Research Assistant in the Department of Software Engineering<span id="dots3">...</span><span id="more3"> and Game Development. She is pursuing a PhD degree in Computer Science.</span></p>
-                        <p><button onclick="myFunction3()" id="myBtn3">Read more</button></p>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="w3-col l3 m6 w3-margin-bottom">
-                        <div class="w3-card">
-                            <script>
-                                function myFunction4() {
-                                    var dots = document.getElementById("dots4");
-                                    var moreText = document.getElementById("more4");
-                                    var btnText = document.getElementById("myBtn4");
-                    
-                                    if (dots.style.display === "none") {
-                                        dots.style.display = "inline";
-                                        btnText.innerHTML = "Read more";
-                                        moreText.style.display = "none";
-                                    } else {
-                                        dots.style.display = "none";
-                                        btnText.innerHTML = "Read less";
-                                        moreText.style.display = "inline";
-                                    }
-                                }
-                            </script>
-                            <img src="/images/sisk.png" alt="Marion" style="width:100%">
-                            <div class="w3-container">
-                            <h3>Marion Sisk</h3>
-                            <p class="w3-opacity">MS Student</p>
-                            <p>My research interest is semantic segmentation of LiDAR data in an automotive context,<span id="dots4">...</span><span id="more4"> focusing on new machine learning techniques integrating both spatial and temporal learning. My thesis title is LSTM Augmented Kernel Point Fully Convolutional Network: Enhanced ML Model for Segmentation of 4D Point Clouds.</span></p>
-                            <p><button onclick="myFunction4()" id="myBtn4">Read more</button></p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="w3-col l3 m6 w3-margin-bottom">
-                            <div class="w3-card">
-                                <script>
-                                    function myFunction5() {
-                                        var dots = document.getElementById("dots5");
-                                        var moreText = document.getElementById("more5");
-                                        var btnText = document.getElementById("myBtn5");
-                        
-                                        if (dots.style.display === "none") {
-                                            dots.style.display = "inline";
-                                            btnText.innerHTML = "Read more";
-                                            moreText.style.display = "none";
-                                        } else {
-                                            dots.style.display = "none";
-                                            btnText.innerHTML = "Read less";
-                                            moreText.style.display = "inline";
-                                        }
-                                    }
-                                </script>
-                                <img src="/images/naraparaju.png" alt="Krishna" style="width:100%">
-                                <div class="w3-container">
-                                <h3>Krishna Chaitanya Naraparaju</h3>
-                                <p class="w3-opacity">MS Student</p>
-                                <p>My research interests are Virtual Reality, Augmented Reality, and Robotics. I'd love to bring<span id="dots5">...</span><span id="more5"> advancements in the fields and learn more about the technology and make it more immersive and user-friendly for everyone. My thesis topic is Player Experience in Asymmetric Gaming Interfaces: Comparing Impact of Game Mood in HMD and Non–HMD. </span></p>
-                                <p><button onclick="myFunction5()" id="myBtn5">Read more</button></p>
-                                </div>    
-                            </div>
-                            </div>
-
-                            <div class="w3-col l3 m6 w3-margin-bottom">
-                                <div class="w3-card">
-                                    <script>
-                                        function myFunction6() {
-                                            var dots = document.getElementById("dots6");
-                                            var moreText = document.getElementById("more6");
-                                            var btnText = document.getElementById("myBtn6");
-                            
-                                            if (dots.style.display === "none") {
-                                                dots.style.display = "inline";
-                                                btnText.innerHTML = "Read more";
-                                                moreText.style.display = "none";
-                                            } else {
-                                                dots.style.display = "none";
-                                                btnText.innerHTML = "Read less";
-                                                moreText.style.display = "inline";
-                                            }
-                                        }
-                                    </script>
-                                    <img src="/images/prather.png" alt="Mason" style="width:100%">
-                                    <div class="w3-container">
-                                    <h3>Mason Prather</h3>
-                                    <p class="w3-opacity">BS Student</p>
-                                    <p>I am a CGDD student at KSU in my 5th year. I plan to utilize my skills as a game developer<span id="dots6">...</span><span id="more6"> to assist with developing research projects. My research interest lies in Virtual Reality and its associated technologies, and I spend time working in Esports and PC game development. </span></p>
-                                    <p><button onclick="myFunction6()" id="myBtn6">Read more</button></p>
-                                    </div>    
-                                </div>
-                                </div>
-                                
-
-
-
-
-                            
-        </div>
-        </div>
-
-        <!-- Work Section -->
-        <!--
-        <div class="w3-container" style="padding:60px 16px" id="work">
-        <h3 class="w3-center" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; ">OUR WORK</h3>
-        <p class="w3-center w3-large">What we've done for people</p>
-
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-col l3 m6">
-            <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-            </div>
-            <div class="w3-col l3 m6">
-            <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-            </div>
-            <div class="w3-col l3 m6">
-            <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-            </div>
-            <div class="w3-col l3 m6">
-            <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-            </div>
-        </div>
-        <div class="w3-row-padding w3-section">
-            <div class="w3-col l3 m6">
-                <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-            </div>
-        </div>
-    </div>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-    
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-        </div>
+<html>
+	<head>
+		<title>IEI Lab KSU</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-        <!-- Join  -->
-        <div class="w3-container w3-center " style=" background-color:rgb(255, 198, 41); padding:60px 16px" id="join">
-            <div style="width: 60%; margin-left: auto; margin-right: auto;" >
-                <h3 class="w3-center" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; ">JOINING OUR LAB!</h3>
-                    <div class="w3-large"style="text-align: justify;">
-                        <p >
-                            The IEI Lab is actively looking for <b>highly motivated</b> students with a <b>passion</b> for solving challenging research problems in Immersive Reality, Empathic Computing, and Human-Computer Interaction. We are welcoming <b>Ph.D., M.S., and Undergraduate researchers</b>! Ideal applicants should have the following qualifications: 
-                        </p>
-                        
-                        <h4><b>Required:</b></h4>
-                            <ul>
-                                <li>Technical background in Computer Science, Computer Game Design and Development, or a similar discipline;</li>
-                                <li>Collaborate well with other team members;</li>
-                                <li>Knowledge or experience in at least one of the following areas: 3D Game Engines (Unity 3D or Unreal), the NVIDIA Omniverse Platform, Extended Reality (Virtual Reality or Augmented Reality).</li>
-                             </ul>
-                        <h4><b>Recommended:</b></h4>
-                            <ul>
-                                <li>Proficiency in one or more of the following programming languages: C++, C#, or Python;</li>
-                                <li>Knowledge or experience in at least one of the following disciplines: Human-Computer Interaction, Cognitive Science, Empathic Computing, Computer Graphics or Computer Vision, User Studies.</li>
-                            </ul>
-                            <p>
-                                <b>Students who would like to apply to our lab must submit their resume via <em>**KSU student e-mail**</em> to <a href="mailto:sjung11@kennesaw.edu">sjung11@kennesaw.edu</a>.</b>
-                            </p>
-                    </div>
-            </div>
-        </div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      
-        <p>
-                Kennesaw State University
-            <br>Department of Sowftware Engineering & Game Design and Development
-            <br>sjung11@kennesaw.edu
-        </p>
-  
-    </footer>
-        
-        <script>
-        // Modal Image Gallery
-        function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-        }
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">IEI Lab</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Immersive Empathic Interface Lab</h2>
+							<p>
+								Kennesaw State University<br />
+								Department of Software Engineering<br />
+								and Game Development
+							</p>
+						</div>
+						<a href="#one" class="more scrolly">Enter The Lab</a>
+					</section>
 
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Arcu aliquet vel lobortis ata nisl<br />
+								eget augue amet aliquet nisl cep donec</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
 
-        function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-        } else {
-            mySidebar.style.display = 'block';
-        }
-        }
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Magna primis lobortis<br />
+								sed ullamcorper</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Augue eleifend aliquet<br />
+								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+					</section>
 
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-        </script>
-        
-       
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane">
+									<h3>Arcu accumsan</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-laptop">
+									<h3>Ac Augue Eget</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Mus Scelerisque</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-headphones-alt">
+									<h3>Mauris Imperdiet</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        </body>
-    </html>
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Arcue ut vel commodo</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+							</header>
+							<ul class="actions stacked">
+								<li><a href="#" class="button fit primary">Activate</a></li>
+								<li><a href="#" class="button fit">Learn More</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
