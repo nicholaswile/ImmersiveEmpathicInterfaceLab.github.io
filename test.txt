@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>IEI Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Members</li>
+            <li>Projects</li>
+            <li>Join</li>
+        </ul>
+    </div>
+        <div class="main">
+        <h1>Immersive Empathic Interface Lab</h1>
+        <hr>
+        <p>This is the future destination for the IEI Lab website.</p>
+        <p>This website is currently under construction!</p>
+    </div>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+
+</html>
+
+
+
+
+:root {
+   
+    --col_bg: #F8F8FF;
+    --col_nav1: #000000ff;
+    --col_nav2: #1b1b1b00;
+    --col_font: #000000;
+}
+
+.dark-mode {
+    --col_bg: #1b1b1b;
+    --col_font: #FFFFFF;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--col_bg);
+    color: var(--col_font);
+
+}
+
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--col_nav1), var(--col_nav2));
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar ul {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.navbar ul li {
+    float: right; 
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.main {
+    margin-top: 128px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.main hr {
+    margin-left: 0;
+    margin-right: 0;
+}
