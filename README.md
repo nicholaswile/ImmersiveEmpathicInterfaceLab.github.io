@@ -2,10 +2,10 @@
 
 https://ImmersiveEmpathicInterfaceLab.github.io
 
-Website for the Immersive Empathic Interface Lab in the Department of Software Engineering and Game Development at Kennesaw State University.
+Website for the Immersive Empathic Interface Lab in the Department of Software Engineering and Game Development at Kennesaw State University. Created and maintained by Nicholas Wile. 
 
-## Template Credits
-Spectral by HTML5 UP
+## Credits
+Template adapted from Spectral by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
