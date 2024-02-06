@@ -2989,6 +2989,17 @@ input, select, textarea {
 
 			}
 
+		/*Aligning text with images for members list*/
+		.members img {
+			float: left;
+			width: 500px; 
+			border-radius: 25px;
+		}
+		.members p {
+			overflow: hidden;
+			padding-left: 20px;
+			text-align: justify;
+		}
 
 		/*The three things about the lab*/
 		.wrapper.style2 {
