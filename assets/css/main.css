@@ -2992,13 +2992,61 @@ input, select, textarea {
 		/*Aligning text with images for members list*/
 		.members img {
 			float: left;
-			width: 500px; 
+			width: 540px; 
+			height: 540px;
+			object-fit: cover;
 			border-radius: 25px;
 		}
 		.members p {
 			overflow: hidden;
-			padding-left: 20px;
+			padding-left: 50px;
 			text-align: justify;
+		}
+
+		.wrapper.style5 {
+			display: flex;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.members img {
+				float: left;
+				width:50%; 
+				border-radius: 25px;
+			}
+
+			.members p {
+				text-align: justify;
+			}
+	
+		}
+
+		@media screen and (max-width: 950px) {
+
+			.members img {
+				float: none;
+				width:100%; 
+				border-radius: 25px;
+			}
+
+			.members p {
+				text-align: justify;
+			}
+	
+		}
+
+		@media screen and (max-width: 320px) {
+
+			.members img {
+				float: none;
+				width: 260px; 
+				border-radius: 25px;
+			}
+
+			.members p {
+				text-align: justify;
+			}
+	
 		}
 
 		/*The three things about the lab*/
