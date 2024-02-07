@@ -3026,11 +3026,10 @@ input, select, textarea {
 			.members img {
 				float: none;
 				width:100%; 
-				border-radius: 25px;
 			}
 
 			.members p {
-				text-align: justify;
+				padding-left: 0px;
 			}
 	
 		}
@@ -3038,13 +3037,7 @@ input, select, textarea {
 		@media screen and (max-width: 320px) {
 
 			.members img {
-				float: none;
 				width: 260px; 
-				border-radius: 25px;
-			}
-
-			.members p {
-				text-align: justify;
 			}
 	
 		}
